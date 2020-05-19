@@ -117,7 +117,7 @@ class PracticeCardViewController: UIViewController {
         if checkQuestion >= questionNumber {
             checkQuestion = 0
         } else if checkQuestion < questionNumber {
-            timeButton.setTitle("\(checkQuestion + 1)/\(questionNumber)", for: .normal)
+            timeButton.setTitle("Card: \(checkQuestion + 1)/\(questionNumber)", for: .normal)
         }
     }
     
@@ -176,11 +176,6 @@ class PracticeCardViewController: UIViewController {
             actualAnswer = topRandomNumber / bottomRandomNumber
         }
         question = "\(topRandomNumber) \(checkForOperation) \(bottomRandomNumber) = \(actualAnswer)"
-    }
-    
-    // Gets the question and answer user selected
-    func userSelection() {
-        userSelectedAnswer = "\(selectedAnswer) \(checkForOperation) \(bottomRandomNumber) = \(actualAnswer)"
     }
     
     // Button answers
@@ -243,7 +238,6 @@ class PracticeCardViewController: UIViewController {
         animateButton(doneButton)
         numberTapped = false
         selectedAnswer = Int(answerLabel.text ?? "0")!
-        userSelection()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AnswerView")

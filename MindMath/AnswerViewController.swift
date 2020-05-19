@@ -22,7 +22,12 @@ class AnswerViewController: UIViewController {
         
         previousTopNumber = topRandomNumber
         previousBottomNumber = bottomRandomNumber
+        previousAnswer = actualAnswer
         checkQuestion += 1
+        
+        if (defaults.bool(forKey: "missingNumberQuestion") == true) {
+            actualAnswer = missingNumber
+        }
         
         if selectedAnswer == actualAnswer {
             correctAnswers += 1

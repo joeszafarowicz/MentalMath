@@ -12,9 +12,6 @@ import Foundation
 let defaults = UserDefaults.standard
 var fullVersion: Bool = false
 
-let backgroundColor: UIColor = UIColor(red: 53/255, green: 53/255, blue: 49/255, alpha: 1)
-let textColor: UIColor = UIColor(red: 255/255, green: 255/255, blue: 243/255, alpha: 1)
-
 // Review Counter
 var userViewedCounter: Int = 0
 
@@ -73,8 +70,11 @@ var missingNumberSequenceTop: Bool = false
 // Int answer values
 var topRandomNumber: Int = 0
 var bottomRandomNumber: Int = 0
+
 var previousTopNumber: Int = 0
 var previousBottomNumber: Int = 0
+var previousAnswer: Int = 0
+
 var actualAnswer: Int = 0
 var answerOne: Int = 0
 var answerTwo: Int = 0
@@ -89,7 +89,6 @@ var finalScoreValue: Int = 0
 
 // Values for question overview
 var question: String = ""
-var userSelectedAnswer: String = ""
 
 // Timer values
 var minutesTime = 0

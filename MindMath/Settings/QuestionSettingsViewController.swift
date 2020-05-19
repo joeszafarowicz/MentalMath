@@ -12,6 +12,7 @@ class QuestionSettingsViewController: UIViewController {
 
     @IBOutlet weak var homeButton: UIButton!
     
+    @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var levelOneButton: UIButton!
     @IBOutlet weak var levelTwoButton: UIButton!
     @IBOutlet weak var levelThreeButton: UIButton!
@@ -19,6 +20,7 @@ class QuestionSettingsViewController: UIViewController {
     @IBOutlet weak var levelFiveButton: UIButton!
     @IBOutlet weak var levelSixButton: UIButton!
     
+    @IBOutlet weak var questionAmountLabel: UILabel!
     @IBOutlet weak var fiveQuestionsButton: UIButton!
     @IBOutlet weak var tenQuestionsButton: UIButton!
     @IBOutlet weak var fifteenQuestionsButton: UIButton!
@@ -32,6 +34,8 @@ class QuestionSettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkLevel()
+        checkQuestionAmount()
         
         if defaults.bool(forKey: "fullVersion") == false {
             levelFourButton.isEnabled = false
@@ -45,6 +49,56 @@ class QuestionSettingsViewController: UIViewController {
         }
     }
     
+    func checkLevel() {
+        var level: Int = 0
+        
+        if defaults.bool(forKey: "levelOne") == true {
+            level = 1
+        } else if defaults.bool(forKey: "levelTwo") == true {
+            level = 2
+        } else if defaults.bool(forKey: "levelThree") == true {
+            level = 3
+        } else if defaults.bool(forKey: "levelFour") == true {
+            level = 4
+        } else if defaults.bool(forKey: "levelFive") == true {
+            level = 5
+        } else if defaults.bool(forKey: "levelSix") == true {
+            level = 6
+        } else {
+            level = 1
+        }
+        levelLabel.text = "Level \(level)"
+    }
+    
+    func checkQuestionAmount() {
+        var amount: Int = 0
+        
+        if defaults.bool(forKey: "fiveQuestions") == true {
+            amount = 5
+        } else if defaults.bool(forKey: "tenQuestions") == true {
+            amount = 10
+        } else if defaults.bool(forKey: "fifteenQuestions") == true {
+           amount = 15
+        } else if defaults.bool(forKey: "twentyQuestions") == true {
+            amount = 20
+        } else if defaults.bool(forKey: "twentyfiveQuestions") == true {
+            amount = 25
+        } else if defaults.bool(forKey: "thirtyQuestions") == true {
+            amount = 30
+        } else if defaults.bool(forKey: "thirtyfiveQuestions") == true {
+            amount = 35
+        } else if defaults.bool(forKey: "fourtyQuestions") == true {
+            amount = 40
+        } else if defaults.bool(forKey: "fourtyfiveQuestions") == true {
+            amount = 45
+        } else if defaults.bool(forKey: "fiftyQuestions") == true {
+            amount = 50
+        } else {
+            amount = 10
+        }
+        questionAmountLabel.text = "Question Amount \n\(amount)"
+    }
+    
     // MARK: Level buttons
     @IBAction func levelOneButtonTapped(_ sender: UIButton) {
         animateButton(levelOneButton)
@@ -54,6 +108,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "levelFour")
         defaults.set(false, forKey: "levelFive")
         defaults.set(false, forKey: "levelSix")
+        checkLevel()
     }
     
     @IBAction func levelTwoButtonTapped(_ sender: UIButton) {
@@ -64,6 +119,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "levelFour")
         defaults.set(false, forKey: "levelFive")
         defaults.set(false, forKey: "levelSix")
+        checkLevel()
     }
     
     @IBAction func levelThreeButtonTapped(_ sender: UIButton) {
@@ -74,6 +130,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "levelFour")
         defaults.set(false, forKey: "levelFive")
         defaults.set(false, forKey: "levelSix")
+        checkLevel()
     }
     
     @IBAction func levelFourButtonTapped(_ sender: UIButton) {
@@ -84,6 +141,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(true, forKey: "levelFour")
         defaults.set(false, forKey: "levelFive")
         defaults.set(false, forKey: "levelSix")
+        checkLevel()
     }
     
     @IBAction func levelFiveButtonTapped(_ sender: UIButton) {
@@ -94,6 +152,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "levelFour")
         defaults.set(true, forKey: "levelFive")
         defaults.set(false, forKey: "levelSix")
+        checkLevel()
     }
     
     @IBAction func levelSixButtonTapped(_ sender: UIButton) {
@@ -104,6 +163,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "levelFour")
         defaults.set(false, forKey: "levelFive")
         defaults.set(true, forKey: "levelSix")
+        checkLevel()
     }
     
     // MARK: Question buttons
@@ -119,6 +179,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func tenQuestionsButtonTapped(_ sender: UIButton) {
@@ -133,6 +194,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func fifteenQuestionsButtonTapped(_ sender: UIButton) {
@@ -147,6 +209,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func twentyQuestionsButtonTapped(_ sender: UIButton) {
@@ -161,6 +224,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func twentyFiveQuestionsButtonTapped(_ sender: UIButton) {
@@ -175,6 +239,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func thirtyQuestionsButtonTapped(_ sender: UIButton) {
@@ -189,6 +254,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func thirtyFiveQuestionsButtonTapped(_ sender: UIButton) {
@@ -203,6 +269,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func fourtyQuestionsButtonTapped(_ sender: UIButton) {
@@ -217,6 +284,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(true, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func fourtyFiveQuestionsButtonTapped(_ sender: UIButton) {
@@ -231,6 +299,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(true, forKey: "fourtyfiveQuestions")
         defaults.set(false, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func fiftyQuestionsButtonTapped(_ sender: UIButton) {
@@ -245,6 +314,7 @@ class QuestionSettingsViewController: UIViewController {
         defaults.set(false, forKey: "fourtyQuestions")
         defaults.set(false, forKey: "fourtyfiveQuestions")
         defaults.set(true, forKey: "fiftyQuestions")
+        checkQuestionAmount()
     }
     
     @IBAction func homeButtonTapped(_ sender: UIButton) {
