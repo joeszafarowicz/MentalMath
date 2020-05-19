@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203F2A40B5D805487CB2449A /* Pods_MindMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9623B2AFEBE34A2006FED3 /* Pods_MindMath.framework */; };
+		CF3678A1247372A80011A900 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3678A0247372A80011A900 /* AnswerViewController.swift */; };
+		CF3678A32473861A0011A900 /* PracticeTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3678A22473861A0011A900 /* PracticeTypesViewController.swift */; };
+		CF3678A4247387B70011A900 /* PracticeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198742472DA0600BD37B3 /* PracticeCardViewController.swift */; };
 		CF41984F2472D86800BD37B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41984E2472D86800BD37B3 /* AppDelegate.swift */; };
 		CF4198512472D86800BD37B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198502472D86800BD37B3 /* SceneDelegate.swift */; };
-		CF4198532472D86800BD37B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198522472D86800BD37B3 /* ViewController.swift */; };
-		CF4198562472D86800BD37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4198542472D86800BD37B3 /* Main.storyboard */; };
 		CF4198582472D86900BD37B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4198572472D86900BD37B3 /* Assets.xcassets */; };
 		CF41985B2472D86900BD37B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4198592472D86900BD37B3 /* LaunchScreen.storyboard */; };
+		CF4198642472D89A00BD37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4198622472D89A00BD37B3 /* Main.storyboard */; };
+		CF4198672472D8CE00BD37B3 /* SigmarOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF4198662472D8CE00BD37B3 /* SigmarOne-Regular.ttf */; };
+		CF41987B2472DA2A00BD37B3 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198782472DA2900BD37B3 /* ResultsViewController.swift */; };
+		CF41987C2472DA2A00BD37B3 /* QuestionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198792472DA2900BD37B3 /* QuestionInfoViewController.swift */; };
+		CF41987F2472DBBD00BD37B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41987E2472DBBD00BD37B3 /* HomeViewController.swift */; };
+		CF41988A2472DBFD00BD37B3 /* QuestionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198882472DBFD00BD37B3 /* QuestionTypesViewController.swift */; };
+		CF4198902472DDB000BD37B3 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41988F2472DDB000BD37B3 /* CardViewController.swift */; };
+		CF79903424733902008B8CF9 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198862472DBDF00BD37B3 /* Statistics.swift */; };
+		CF79903524733904008B8CF9 /* UISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198852472DBDF00BD37B3 /* UISegue.swift */; };
+		CF79903724733AF7008B8CF9 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79903624733AF7008B8CF9 /* ReadyViewController.swift */; };
+		CF799039247347DF008B8CF9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF799038247347DF008B8CF9 /* SettingsViewController.swift */; };
+		CF79903B247348C1008B8CF9 /* QuestionSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79903A247348C1008B8CF9 /* QuestionSettingsViewController.swift */; };
+		CF79903C24734D31008B8CF9 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4198752472DA0600BD37B3 /* PracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B9623B2AFEBE34A2006FED3 /* Pods_MindMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C0DB7C51809EDE26F73560 /* Pods-MindMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMath.release.xcconfig"; path = "Target Support Files/Pods-MindMath/Pods-MindMath.release.xcconfig"; sourceTree = "<group>"; };
+		B740A7A9A87792CE416DAA9C /* Pods-MindMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMath.debug.xcconfig"; path = "Target Support Files/Pods-MindMath/Pods-MindMath.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3678A0247372A80011A900 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		CF3678A22473861A0011A900 /* PracticeTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTypesViewController.swift; sourceTree = "<group>"; };
 		CF41984B2472D86800BD37B3 /* MindMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF41984E2472D86800BD37B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4198502472D86800BD37B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF4198522472D86800BD37B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF4198552472D86800BD37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF4198572472D86900BD37B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF41985A2472D86900BD37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF41985C2472D86900BD37B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4198632472D89A00BD37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Base.lproj/Project/Mars Math/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		CF4198662472D8CE00BD37B3 /* SigmarOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SigmarOne-Regular.ttf"; path = "../../../../../Downloads/Sigmar_One/SigmarOne-Regular.ttf"; sourceTree = "<group>"; };
+		CF4198742472DA0600BD37B3 /* PracticeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCardViewController.swift; sourceTree = "<group>"; };
+		CF4198752472DA0600BD37B3 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		CF4198782472DA2900BD37B3 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = "../../Base.lproj/Project/Mars Math/ResultsViewController.swift"; sourceTree = "<group>"; };
+		CF4198792472DA2900BD37B3 /* QuestionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionInfoViewController.swift; path = "../../Base.lproj/Project/Mars Math/QuestionInfoViewController.swift"; sourceTree = "<group>"; };
+		CF41987E2472DBBD00BD37B3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../../Base.lproj/Project/Mars Math/HomeViewController.swift"; sourceTree = "<group>"; };
+		CF4198852472DBDF00BD37B3 /* UISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegue.swift; sourceTree = "<group>"; };
+		CF4198862472DBDF00BD37B3 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		CF4198882472DBFD00BD37B3 /* QuestionTypesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionTypesViewController.swift; path = "../../Base.lproj/Project/Mars Math/QuestionTypesViewController.swift"; sourceTree = "<group>"; };
+		CF41988F2472DDB000BD37B3 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		CF79903624733AF7008B8CF9 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		CF799038247347DF008B8CF9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CF79903A247348C1008B8CF9 /* QuestionSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203F2A40B5D805487CB2449A /* Pods_MindMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E9BD741B376A441058407F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9623B2AFEBE34A2006FED3 /* Pods_MindMath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90021F7EDBABAE8F7B38B61D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B740A7A9A87792CE416DAA9C /* Pods-MindMath.debug.xcconfig */,
+				84C0DB7C51809EDE26F73560 /* Pods-MindMath.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF4198422472D86800BD37B3 = {
 			isa = PBXGroup;
 			children = (
 				CF41984D2472D86800BD37B3 /* MindMath */,
 				CF41984C2472D86800BD37B3 /* Products */,
+				90021F7EDBABAE8F7B38B61D /* Pods */,
+				1E9BD741B376A441058407F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +110,59 @@
 			children = (
 				CF41984E2472D86800BD37B3 /* AppDelegate.swift */,
 				CF4198502472D86800BD37B3 /* SceneDelegate.swift */,
-				CF4198522472D86800BD37B3 /* ViewController.swift */,
-				CF4198542472D86800BD37B3 /* Main.storyboard */,
+				CF4198622472D89A00BD37B3 /* Main.storyboard */,
+				CF41987E2472DBBD00BD37B3 /* HomeViewController.swift */,
+				CF4198792472DA2900BD37B3 /* QuestionInfoViewController.swift */,
+				CF4198882472DBFD00BD37B3 /* QuestionTypesViewController.swift */,
+				CF79903624733AF7008B8CF9 /* ReadyViewController.swift */,
+				CF41988F2472DDB000BD37B3 /* CardViewController.swift */,
+				CF3678A0247372A80011A900 /* AnswerViewController.swift */,
+				CF4198782472DA2900BD37B3 /* ResultsViewController.swift */,
+				CF79903D24734FDD008B8CF9 /* Settings */,
+				CF4198722472DA0600BD37B3 /* Practice  */,
+				CF4198842472DBDE00BD37B3 /* Models */,
+				CF4198652472D8B700BD37B3 /* Fonts */,
 				CF4198572472D86900BD37B3 /* Assets.xcassets */,
 				CF4198592472D86900BD37B3 /* LaunchScreen.storyboard */,
 				CF41985C2472D86900BD37B3 /* Info.plist */,
 			);
 			path = MindMath;
+			sourceTree = "<group>";
+		};
+		CF4198652472D8B700BD37B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CF4198662472D8CE00BD37B3 /* SigmarOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CF4198722472DA0600BD37B3 /* Practice  */ = {
+			isa = PBXGroup;
+			children = (
+				CF4198752472DA0600BD37B3 /* PracticeViewController.swift */,
+				CF3678A22473861A0011A900 /* PracticeTypesViewController.swift */,
+				CF4198742472DA0600BD37B3 /* PracticeCardViewController.swift */,
+			);
+			path = "Practice ";
+			sourceTree = "<group>";
+		};
+		CF4198842472DBDE00BD37B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF4198862472DBDF00BD37B3 /* Statistics.swift */,
+				CF4198852472DBDF00BD37B3 /* UISegue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF79903D24734FDD008B8CF9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CF799038247347DF008B8CF9 /* SettingsViewController.swift */,
+				CF79903A247348C1008B8CF9 /* QuestionSettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF41985F2472D86900BD37B3 /* Build configuration list for PBXNativeTarget "MindMath" */;
 			buildPhases = (
+				EDCDD00ED38857C6210A7CF9 /* [CP] Check Pods Manifest.lock */,
 				CF4198472472D86800BD37B3 /* Sources */,
 				CF4198482472D86800BD37B3 /* Frameworks */,
 				CF4198492472D86800BD37B3 /* Resources */,
+				B9D4134E5C36B797DA1FB5F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,41 +226,97 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF41985B2472D86900BD37B3 /* LaunchScreen.storyboard in Resources */,
+				CF4198672472D8CE00BD37B3 /* SigmarOne-Regular.ttf in Resources */,
 				CF4198582472D86900BD37B3 /* Assets.xcassets in Resources */,
-				CF4198562472D86800BD37B3 /* Main.storyboard in Resources */,
+				CF4198642472D89A00BD37B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9D4134E5C36B797DA1FB5F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMath/Pods-MindMath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMath/Pods-MindMath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindMath/Pods-MindMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCDD00ED38857C6210A7CF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindMath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF4198472472D86800BD37B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4198532472D86800BD37B3 /* ViewController.swift in Sources */,
+				CF3678A32473861A0011A900 /* PracticeTypesViewController.swift in Sources */,
+				CF79903C24734D31008B8CF9 /* PracticeViewController.swift in Sources */,
+				CF79903724733AF7008B8CF9 /* ReadyViewController.swift in Sources */,
+				CF41987B2472DA2A00BD37B3 /* ResultsViewController.swift in Sources */,
+				CF799039247347DF008B8CF9 /* SettingsViewController.swift in Sources */,
+				CF4198902472DDB000BD37B3 /* CardViewController.swift in Sources */,
+				CF41987F2472DBBD00BD37B3 /* HomeViewController.swift in Sources */,
 				CF41984F2472D86800BD37B3 /* AppDelegate.swift in Sources */,
+				CF79903524733904008B8CF9 /* UISegue.swift in Sources */,
+				CF3678A1247372A80011A900 /* AnswerViewController.swift in Sources */,
+				CF79903B247348C1008B8CF9 /* QuestionSettingsViewController.swift in Sources */,
+				CF41988A2472DBFD00BD37B3 /* QuestionTypesViewController.swift in Sources */,
 				CF4198512472D86800BD37B3 /* SceneDelegate.swift in Sources */,
+				CF79903424733902008B8CF9 /* Statistics.swift in Sources */,
+				CF3678A4247387B70011A900 /* PracticeCardViewController.swift in Sources */,
+				CF41987C2472DA2A00BD37B3 /* QuestionInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF4198542472D86800BD37B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF4198552472D86800BD37B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF4198592472D86900BD37B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF41985A2472D86900BD37B3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF4198622472D89A00BD37B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4198632472D89A00BD37B3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +438,7 @@
 		};
 		CF4198602472D86900BD37B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B740A7A9A87792CE416DAA9C /* Pods-MindMath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +457,7 @@
 		};
 		CF4198612472D86900BD37B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C0DB7C51809EDE26F73560 /* Pods-MindMath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
