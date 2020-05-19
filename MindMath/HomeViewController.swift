@@ -62,11 +62,11 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        // Call the GC authentication controller
-//        authenticateLocalPlayer()
-//
-//        // Check for leaderboard ID then set score
-//        checkLeaderboardID()
+        // Call the GC authentication controller
+        authenticateLocalPlayer()
+
+        // Check for leaderboard ID then set score
+        checkLeaderboardID()
     }
     
     // MARK: - AUTHENTICATE LOCAL PLAYER
