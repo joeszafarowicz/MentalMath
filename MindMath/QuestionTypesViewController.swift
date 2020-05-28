@@ -16,10 +16,6 @@ class QuestionTypesViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var infoButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     func presentReadyView() {
         let story = UIStoryboard(name: "Main", bundle:nil)
         let viewController = story.instantiateViewController(withIdentifier: "ReadyView") as! ReadyViewController

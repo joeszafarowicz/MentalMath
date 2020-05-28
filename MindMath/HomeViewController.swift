@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         // Call the GC authentication controller
         authenticateLocalPlayer()
 
-        // Check for leaderboard ID then set score
+        // Check for leaderboard ID then set user score
         checkLeaderboardID()
     }
     
