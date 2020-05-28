@@ -1,9 +1,9 @@
 //
-//  InformationViewController.swift
-//  MathWiz
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 5/10/18.
-//  Copyright © 2018 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit

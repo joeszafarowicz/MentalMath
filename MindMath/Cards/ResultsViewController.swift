@@ -1,31 +1,19 @@
 //
-//  FinalScoreViewController.swift
-//  Multiplication Cards
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 1/10/18.
-//  Copyright © 2018 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
 import GameKit
 import StoreKit
 
-var currentVC: UIViewController!
-
 class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
-    
-    // Button outlets
+
     @IBOutlet weak var leaderboardsButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
-    
-    // Game center
-    var gcEnabled = Bool() // Check if the user has Game Center enabled
-    var gcDefaultLeaderBoard = String() // Check the default leaderboardID
-    
-    var LEADERBOARD_ID = ""
-    
-    var finalScoreValue: Int = 0
-    var finalPercentValue: Double = 0
 
     @IBOutlet weak var questionsCompletedLabel: UILabel!
     @IBOutlet weak var correctAnswersLabel: UILabel!
@@ -33,46 +21,6 @@ class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
     @IBOutlet weak var accuracyLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    
-    // Checks leaderboard ID and sets accordingly
-    func checkLeaderboardID() {
-        if (defaults.bool(forKey: "fiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fivequestions"
-        }
-        if (defaults.bool(forKey: "tenQuestions") == true) {
-             LEADERBOARD_ID = "com.mindmath.tenquestions"
-        }
-        if (defaults.bool(forKey: "fifteenQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fifteenquestions"
-        }
-        if (defaults.bool(forKey: "twentyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.twentyquestions"
-        }
-        if (defaults.bool(forKey: "twentyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.twentyfivequestions"
-        }
-        if (defaults.bool(forKey: "thirtyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.thirtyquestions"
-        }
-        if (defaults.bool(forKey: "thirtyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.thirtyfivequestions"
-        }
-        if (defaults.bool(forKey: "fourtyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fourtyquestions"
-        }
-        if (defaults.bool(forKey: "fourtyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fourtyfivequestions"
-        }
-        if (defaults.bool(forKey: "fiftyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fiftyquestions"
-        }
-        if (defaults.bool(forKey: "timedQuestion") == true) {
-            LEADERBOARD_ID = "com.mindmath.timedquestions"
-        }
-        if (defaults.bool(forKey: "missingNumberQuestion") == true) {
-            LEADERBOARD_ID = "com.mindmath.missingnumberquestions"
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,16 +108,16 @@ class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
                 self.present(ViewController!, animated: true, completion: nil)
             } else if (localPlayer.isAuthenticated) {
                 // 2. Player is already authenticated & logged in, load game center
-                self.gcEnabled = true
+                gcEnabled = true
                 
                 // Get the default leaderboard ID
                 localPlayer.loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifer, error) in
                     if error != nil { print(error!)
-                    } else { self.gcDefaultLeaderBoard = leaderboardIdentifer! }
+                    } else { gcDefaultLeaderBoard = leaderboardIdentifer! }
                 })
             } else {
                 // 3. Game center is not enabled on the users device
-                self.gcEnabled = false
+                gcEnabled = false
                 print("Local player could not be authenticated!")
                 print(error!)
             }

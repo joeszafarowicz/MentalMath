@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  AppDelegate.swift
 //  MindMath
 //
 //  Created by Joseph Szafarowicz on 5/18/20.
@@ -17,12 +17,9 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var reviewAppButton: UIButton!
     @IBOutlet weak var homeButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func questionsButtonTapped(_ sender: UIButton) {
         animateButton(questionsButton)
+        
         let story = UIStoryboard(name: "Main", bundle:nil)
         let viewController = story.instantiateViewController(withIdentifier: "QuestionSettings") as! QuestionSettingsViewController
         UIApplication.shared.windows.first?.rootViewController = viewController
@@ -72,7 +69,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func restoreButtonTapped(_ sender: UIBarButtonItem) {
         animateButton(restoreButton)
-        // Restore previous purchases
+        
         SwiftyStoreKit.restorePurchases(atomically: true) { results in
             if results.restoreFailedPurchases.count > 0 {
                 print("Restore Failed: \(results.restoreFailedPurchases)")

@@ -32,6 +32,7 @@ class PracticeTypesViewController: UIViewController {
         super.viewDidLoad()
         practiceNumberLabel.text = "What number would you like to practice \(practiceOperationStatement) with?"
         
+        // If full version is purchased enable all question amounts
         if defaults.bool(forKey: "fullVersion") == false {
             thirtyQuestionsButton.isEnabled = false
             thirtyFiveQuestionsButton.isEnabled = false

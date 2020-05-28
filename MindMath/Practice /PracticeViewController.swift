@@ -1,9 +1,9 @@
 //
-//  PracticeViewController.swift
-//  MathWiz
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 3/22/18.
-//  Copyright © 2018 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class PracticeViewController: UIViewController {
     @IBOutlet weak var divisionStartButton: UIButton!
     
     func setupForPracticeStart() {
-        // Everytime start button is tapped all values reset
+        // Everytime start button is tapped reset all values 
         checkQuestion = 0
         selectedAnswer = 0
         actualAnswer = 0

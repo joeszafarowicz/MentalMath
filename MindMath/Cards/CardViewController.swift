@@ -1,9 +1,9 @@
 //
-//  CardsViewController.swift
-//  Multiplication Cards
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 12/15/17.
-//  Copyright © 2017 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
@@ -38,8 +38,8 @@ class CardViewController: UIViewController {
         answerLabel.text?.removeAll()
         scoreButton.setTitle("\(score)", for: .normal)
 
+        // Mix operations when mode is active
         if (defaults.bool(forKey: "mixedOperations") == true) {
-            // Random array that sets answer to specific button
             let operationsArray = ["Addition", "Subtraction", "Multiplication", "Division"]
             let operationsRandomIndex = Int(arc4random_uniform(UInt32(operationsArray.count)))
             
@@ -82,7 +82,6 @@ class CardViewController: UIViewController {
                     numberLabel.text = "\(bottomRandomNumber) \(checkForOperation) ? = \(actualAnswer)"
                 }
             }
-            
             scoreButton.setTitle("Score: \(score)", for: .normal)
         }
         
@@ -91,6 +90,7 @@ class CardViewController: UIViewController {
             scoreButton.setTitle("", for: .normal)
         }
 
+        // Setup timer when mode is active
         if (defaults.bool(forKey: "timedQuestion") == true) {
             timerAction()
             
@@ -104,8 +104,7 @@ class CardViewController: UIViewController {
         }
     }
 
-    
-    // Action for timer
+    // Action for timer to set its title accordingly
     @objc func timerAction() {
         scoreSeconds += 1
         secondsTime += 1
@@ -195,7 +194,7 @@ class CardViewController: UIViewController {
         numberLabel.text = "\(topRandomNumber) \(checkForOperation) \(bottomRandomNumber)"
     }
     
-    // Sets up questions
+    // Set up questions
     func questionOrder() {
         // Sets question numbers
         setNumbers()
@@ -287,6 +286,7 @@ class CardViewController: UIViewController {
         }
     }
     
+    // Get random number for questions
     func getRandomNumber() -> Int {
         var drawRandomNumber: Int = 0
         
@@ -348,11 +348,10 @@ class CardViewController: UIViewController {
         }
     }
     
-    // Function to get all possible answers to set button titles
+    // Gets the actual answer to question
     func getPossibleAnswers() {
         questionOrder()
-        
-        // Gets value of actual answer and sets to button title
+
         if checkForOperation.contains("+") {
             setAnswerTitle()
             actualAnswer = topRandomNumber + bottomRandomNumber
@@ -372,7 +371,7 @@ class CardViewController: UIViewController {
         question = "\(topRandomNumber) \(checkForOperation) \(bottomRandomNumber) = \(actualAnswer)"
     }
     
-    // Button answers
+    // MARK: - Number buttons used for answering questions
     @IBAction func oneButtonTapped(_ sender: UIButton) {
         animateButton(oneButton)
         answerLabel.text?.append("1")
@@ -441,6 +440,7 @@ class CardViewController: UIViewController {
                 self.timer.invalidate()
             }
             
+            // Present answer view after question is answered
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "AnswerView")
             vc.modalPresentationStyle = .overCurrentContext
@@ -452,7 +452,7 @@ class CardViewController: UIViewController {
     @IBAction func homebuttonTapped(_ sender: UIButton) {
         animateButton(homeButton)
         self.timer.invalidate()
-        
+
         let story = UIStoryboard(name: "Main", bundle:nil)
         let viewController = story.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         UIApplication.shared.windows.first?.rootViewController = viewController

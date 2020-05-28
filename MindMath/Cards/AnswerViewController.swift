@@ -1,5 +1,5 @@
 //
-//  AnswerViewController.swift
+//  AppDelegate.swift
 //  MindMath
 //
 //  Created by Joseph Szafarowicz on 5/18/20.
@@ -25,10 +25,12 @@ class AnswerViewController: UIViewController {
         previousAnswer = actualAnswer
         checkQuestion += 1
         
+        // Set the answer to missing number when missing number mode is active
         if (defaults.bool(forKey: "missingNumberQuestion") == true) {
             actualAnswer = missingNumber
         }
         
+        // Check answer that user has selected
         if selectedAnswer == actualAnswer {
             correctAnswers += 1
             correctLabel.text = "Correct!"

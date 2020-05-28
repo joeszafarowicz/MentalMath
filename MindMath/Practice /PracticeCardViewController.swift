@@ -1,9 +1,9 @@
 //
-//  PracticeCardViewController.swift
-//  MathWiz
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 3/22/18.
-//  Copyright © 2018 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
@@ -29,11 +29,6 @@ class PracticeCardViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var zeroButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
-    
-    var questionNumber = 0
-    var missingNumberSequenceTop: Bool = false
-    var bottomRandomNumber: Int = 0
-    var topRandomNumber: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -158,11 +153,10 @@ class PracticeCardViewController: UIViewController {
         }
     }
     
-    // Function to get all possible answers to set button titles
+    // Gets the actual answer to question
     func getPossibleAnswers() {
         questionOrder()
-        
-        // Gets value of actual answer and sets to button title
+
         if checkForOperation.contains("+") {
             actualAnswer = topRandomNumber + bottomRandomNumber
         }

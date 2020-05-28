@@ -1,16 +1,15 @@
 //
-//  ChooseModeViewController.swift
-//  MathWiz
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 5/9/18.
-//  Copyright © 2018 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
 
 class QuestionTypesViewController: UIViewController {
-    
-    // Button outlets
+
     @IBOutlet weak var normalQuestionButton: UIButton!
     @IBOutlet weak var timedQuestionButton: UIButton!
     @IBOutlet weak var missingNumberQuestionButton: UIButton!
@@ -21,20 +20,7 @@ class QuestionTypesViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    // Get operation statement then set button background images
-    func setButtons(operation: String) {
-        normalQuestionButton.setBackgroundImage(UIImage(named: "\(operation) Normal.pdf"), for: .normal)
-        timedQuestionButton.setBackgroundImage(UIImage(named: "\(operation) Timed.pdf"), for: .normal)
-        missingNumberQuestionButton.setBackgroundImage(UIImage(named: "\(operation) Missing.pdf"), for: .normal)
-        
-        if operation.isEmpty == true {
-            normalQuestionButton.setBackgroundImage(UIImage(named: "subtraction Normal.pdf"), for: .normal)
-            timedQuestionButton.setBackgroundImage(UIImage(named: "subtraction Timed.pdf"), for: .normal)
-            missingNumberQuestionButton.setBackgroundImage(UIImage(named: "subtraction Missing.pdf"), for: .normal)
-        }
-    }
-    
-    func showReadyView() {
+    func presentReadyView() {
         let story = UIStoryboard(name: "Main", bundle:nil)
         let viewController = story.instantiateViewController(withIdentifier: "ReadyView") as! ReadyViewController
         UIApplication.shared.windows.first?.rootViewController = viewController
@@ -46,7 +32,7 @@ class QuestionTypesViewController: UIViewController {
         defaults.set(true, forKey: "normalQuestion")
         defaults.set(false, forKey: "timedQuestion")
         defaults.set(false, forKey: "missingNumberQuestion")
-        showReadyView()
+        presentReadyView()
     }
     
     @IBAction func timedQuestionButtonTapped(_ sender: UIButton) {
@@ -54,7 +40,7 @@ class QuestionTypesViewController: UIViewController {
         defaults.set(false, forKey: "normalQuestion")
         defaults.set(true, forKey: "timedQuestion")
         defaults.set(false, forKey: "missingNumberQuestion")
-        showReadyView()
+        presentReadyView()
     }
     
     @IBAction func missingNumberQuestionButtonTapped(_ sender: UIButton) {
@@ -62,7 +48,7 @@ class QuestionTypesViewController: UIViewController {
         defaults.set(false, forKey: "normalQuestion")
         defaults.set(false, forKey: "timedQuestion")
         defaults.set(true, forKey: "missingNumberQuestion")
-        showReadyView()
+        presentReadyView()
     }
     
     @IBAction func closeButtonTapped(_ sender: UIButton) {

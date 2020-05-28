@@ -1,5 +1,5 @@
 //
-//  ReadyViewController.swift
+//  AppDelegate.swift
 //  MindMath
 //
 //  Created by Joseph Szafarowicz on 5/18/20.

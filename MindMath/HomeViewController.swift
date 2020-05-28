@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
-//  Multiplication Cards
+//  AppDelegate.swift
+//  MindMath
 //
-//  Created by Joseph Szafarowicz on 12/14/17.
-//  Copyright © 2017 Joseph Szafarowicz. All rights reserved.
+//  Created by Joseph Szafarowicz on 5/18/20.
+//  Copyright © 2020 Joseph Szafarowicz. All rights reserved.
 //
 
 import UIKit
 import GameKit
 
 class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
-    
-    // Button outlets
+
     @IBOutlet weak var additionStartButton: UIButton!
     @IBOutlet weak var subtractionStartButton: UIButton!
     @IBOutlet weak var multiplicationStartButton: UIButton!
@@ -19,46 +18,6 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
     @IBOutlet weak var mixedOpsStartButton: UIButton!
     @IBOutlet weak var practiceStartButton: UIButton!
     @IBOutlet weak var settingsButton: UIButton!
-    
-    // Game center
-    var gcEnabled = Bool() // Check if the user has Game Center enabled
-    var gcDefaultLeaderBoard = String() // Check the default leaderboardID
-    
-    var LEADERBOARD_ID = ""
-
-    // Checks leaderboard ID and sets accordingly
-    func checkLeaderboardID() {
-        if (defaults.bool(forKey: "fiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fivequestions"
-        }
-        if (defaults.bool(forKey: "tenQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.tenquestions"
-        }
-        if (defaults.bool(forKey: "fifteenQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fifteenquestions"
-        }
-        if (defaults.bool(forKey: "twentyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.twentyquestions"
-        }
-        if (defaults.bool(forKey: "twentyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.twentyfivequestions"
-        }
-        if (defaults.bool(forKey: "thirtyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.thirtynquestions"
-        }
-        if (defaults.bool(forKey: "thirtyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.thirtyfivequestions"
-        }
-        if (defaults.bool(forKey: "fourtyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fourtyquestions"
-        }
-        if (defaults.bool(forKey: "fourtyfiveQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fourtyfivequestions"
-        }
-        if (defaults.bool(forKey: "fiftyQuestions") == true) {
-            LEADERBOARD_ID = "com.mindmath.fiftyquestions"
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,26 +28,26 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         checkLeaderboardID()
     }
     
-    // MARK: - AUTHENTICATE LOCAL PLAYER
+    // MARK: - Authenticate local player for leaderboards
     func authenticateLocalPlayer() {
         let localPlayer: GKLocalPlayer = GKLocalPlayer.local
         
         localPlayer.authenticateHandler = {(ViewController, error) -> Void in
             if((ViewController) != nil) {
-                // 1. Show login if player is not logged in
+                // Show login if player is not logged in
                 self.present(ViewController!, animated: true, completion: nil)
             } else if (localPlayer.isAuthenticated) {
-                // 2. Player is already authenticated & logged in, load game center
-                self.gcEnabled = true
+                // Player is already authenticated & logged in, load game center
+                gcEnabled = true
                 
                 // Get the default leaderboard ID
                 localPlayer.loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifer, error) in
                     if error != nil { print(error!)
-                    } else { self.gcDefaultLeaderBoard = leaderboardIdentifer! }
+                    } else { gcDefaultLeaderBoard = leaderboardIdentifer! }
                 })
             } else {
-                // 3. Game center is not enabled on the users device
-                self.gcEnabled = false
+                // Game center is not enabled on the users device
+                gcEnabled = false
                 print("Local player could not be authenticated!")
                 print(error!)
             }
@@ -100,9 +59,8 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         gameCenterViewController.dismiss(animated: true, completion: nil)
     }
     
-    // Resets values for startup
+    // Resets values for startup everytime start button is tapped
     func setupForStart() {
-        // Everytime start button is tapped all values reset
         checkQuestion = 0
         selectedAnswer = 0
         actualAnswer = 0
@@ -114,6 +72,7 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         score = 0
     }
     
+    // Presents the question types view
     func showQuestionType() {
         let story = UIStoryboard(name: "Main", bundle:nil)
         let viewController = story.instantiateViewController(withIdentifier: "QuestionType") as! QuestionTypesViewController
@@ -121,7 +80,7 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
     
-    // Operation button actions
+    // MARK: - Button actions used when a user chooses an operation
     @IBAction func additonStartButtonTapped(_ sender: UIButton) {
         animateButton(additionStartButton)
         setupForStart()
