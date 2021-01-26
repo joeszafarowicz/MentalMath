@@ -77,34 +77,34 @@ var LEADERBOARD_ID = ""
 
 func checkLeaderboardID() {
     if (defaults.bool(forKey: "fiveQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.fivequestions"
+        LEADERBOARD_ID = "com.mentalmath.fivequestions"
     }
     if (defaults.bool(forKey: "tenQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.tenquestions"
+        LEADERBOARD_ID = "com.mentalmath.tenquestions"
     }
     if (defaults.bool(forKey: "fifteenQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.fifteenquestions"
+        LEADERBOARD_ID = "com.mentalmath.fifteenquestions"
     }
     if (defaults.bool(forKey: "twentyQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.twentyquestions"
+        LEADERBOARD_ID = "com.mentalmath.twentyquestions"
     }
     if (defaults.bool(forKey: "twentyfiveQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.twentyfivequestions"
+        LEADERBOARD_ID = "com.mentalmath.twentyfivequestions"
     }
     if (defaults.bool(forKey: "thirtyQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.thirtynquestions"
+        LEADERBOARD_ID = "com.mentalmath.thirtynquestions"
     }
     if (defaults.bool(forKey: "thirtyfiveQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.thirtyfivequestions"
+        LEADERBOARD_ID = "com.mentalmath.thirtyfivequestions"
     }
     if (defaults.bool(forKey: "fourtyQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.fourtyquestions"
+        LEADERBOARD_ID = "com.mentalmath.fourtyquestions"
     }
     if (defaults.bool(forKey: "fourtyfiveQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.fourtyfivequestions"
+        LEADERBOARD_ID = "com.mentalmath.fourtyfivequestions"
     }
     if (defaults.bool(forKey: "fiftyQuestions") == true) {
-        LEADERBOARD_ID = "com.mindmath.fiftyquestions"
+        LEADERBOARD_ID = "com.mentalmath.fiftyquestions"
     }
 }
 
