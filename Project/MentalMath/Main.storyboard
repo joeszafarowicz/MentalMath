@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -19,14 +19,14 @@
             <objects>
                 <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="HomeViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-uE-dk7">
-                                <rect key="frame" x="184" y="204.5" width="400" height="615"/>
+                                <rect key="frame" x="37.5" y="86" width="300" height="495"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br1-w7-UGq">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="73a-Fm-fkp"/>
                                             <constraint firstAttribute="width" constant="400" id="QW2-ab-kbe"/>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6N-Nq-dal">
-                                        <rect key="frame" x="0.0" y="105" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="85" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="6V1-Oy-zY5"/>
                                             <constraint firstAttribute="width" constant="300" id="SxE-Wk-dkU"/>
@@ -84,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-TC-UGt">
-                                        <rect key="frame" x="0.0" y="210" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="170" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="2CH-ve-xqz"/>
                                             <constraint firstAttribute="width" constant="400" id="Fg9-Wj-OOW"/>
@@ -113,7 +113,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-Rg-WEN">
-                                        <rect key="frame" x="0.0" y="315" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="255" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="RCv-mB-sKw"/>
                                             <constraint firstAttribute="width" constant="300" id="WuK-JU-mI3"/>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llT-9v-qZE">
-                                        <rect key="frame" x="0.0" y="420" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="340" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="2XX-5c-tX1"/>
                                             <constraint firstAttribute="height" constant="70" id="5fi-wK-ris"/>
@@ -171,7 +171,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-ad-xh3">
-                                        <rect key="frame" x="0.0" y="525" width="400" height="90"/>
+                                        <rect key="frame" x="0.0" y="425" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="KXq-T1-Enb"/>
                                             <constraint firstAttribute="width" constant="300" id="Sbw-Og-HWo"/>
@@ -229,17 +229,17 @@
             <objects>
                 <viewController storyboardIdentifier="QuestionInfo" id="24v-xQ-mAK" customClass="QuestionInfoViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wut-LU-4Yu">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3u-dc-DrB">
-                                <rect key="frame" x="0.0" y="600" width="768" height="425"/>
+                                <rect key="frame" x="0.0" y="250" width="375" height="418"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ueh-ni-W8H">
-                                        <rect key="frame" x="109" y="31" width="550" height="310"/>
+                                        <rect key="frame" x="8" y="-35" width="359" height="435"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-mS-vrw">
-                                                <rect key="frame" x="0.0" y="0.0" width="550" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="4y8-6s-8Q0"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="Dwn-f3-iWy"/>
@@ -248,7 +248,7 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -266,19 +266,19 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal - Gives and takes points for each correct and incorrect answer" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d99-Kh-bJI">
-                                                <rect key="frame" x="0.0" y="70" width="550" height="80"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal - Gives and takes points for each correct and incorrect answer" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d99-Kh-bJI">
+                                                <rect key="frame" x="0.0" y="50" width="359" height="108.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="4DQ-Hc-YAc">
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="4DQ-Hc-YAc">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="359" id="m0z-fE-8qq"/>
                                                     <constraint firstAttribute="width" constant="450" id="tCA-AE-JhA">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="550"/>
                                                     </constraint>
-                                                    <constraint firstAttribute="height" constant="90" id="uw5-ga-Ili"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="uw5-ga-Ili"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -296,19 +296,19 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missing Number - Each question has a missing number and you have to solve the sequence. Gives points for correct answers" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-MZ-ryV">
-                                                <rect key="frame" x="0.0" y="160" width="550" height="100"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missing Number - Each question has a missing number and you have to solve the sequence. Gives points for correct answers" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-MZ-ryV">
+                                                <rect key="frame" x="0.0" y="168.5" width="359" height="216.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="O4n-bm-lwi">
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="O4n-bm-lwi">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="b7c-N6-zrn">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="550"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="359" id="mD9-4z-1lh"/>
-                                                    <constraint firstAttribute="height" constant="150" id="y88-CY-cQZ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="y88-CY-cQZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -327,13 +327,15 @@
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am5-kH-Vpd">
-                                                <rect key="frame" x="0.0" y="270" width="550" height="40"/>
+                                                <rect key="frame" x="0.0" y="395" width="359" height="40"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="359" id="Usw-qU-rQA"/>
+                                                    <constraint firstAttribute="width" constant="359" id="Usw-qU-rQA">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="550"/>
+                                                    </constraint>
                                                     <constraint firstAttribute="height" constant="40" id="mXb-ez-GCg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <state key="normal" title="Close"/>
                                                 <connections>
                                                     <action selector="closeButtonTapped:" destination="24v-xQ-mAK" eventType="touchUpInside" id="MEY-Hb-aNU"/>
@@ -353,7 +355,7 @@
                         <constraints>
                             <constraint firstItem="N3u-dc-DrB" firstAttribute="leading" secondItem="Wut-LU-4Yu" secondAttribute="leading" id="8bl-KA-hGi"/>
                             <constraint firstItem="N3u-dc-DrB" firstAttribute="trailing" secondItem="Wut-LU-4Yu" secondAttribute="trailing" id="mOE-0N-4W3"/>
-                            <constraint firstItem="N3u-dc-DrB" firstAttribute="top" secondItem="Mel-Mp-1z0" secondAttribute="top" constant="318" id="npT-dI-HSp">
+                            <constraint firstItem="N3u-dc-DrB" firstAttribute="top" secondItem="Mel-Mp-1z0" secondAttribute="top" constant="250" id="npT-dI-HSp">
                                 <variation key="heightClass=regular-widthClass=regular" constant="600"/>
                             </constraint>
                             <constraint firstItem="N3u-dc-DrB" firstAttribute="bottom" secondItem="Wut-LU-4Yu" secondAttribute="bottom" constant="1" id="qh2-xH-INk"/>
@@ -373,33 +375,33 @@
             <objects>
                 <viewController storyboardIdentifier="QuestionType" id="c9c-Cj-GI1" customClass="QuestionTypesViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1gd-yB-e2i">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lot-RJ-WOI">
-                                <rect key="frame" x="274" y="434.5" width="220" height="155"/>
+                                <rect key="frame" x="68.5" y="256" width="238" height="155"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJs-0k-vba">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="HVC-Ox-Mkg"/>
-                                            <constraint firstAttribute="width" constant="220" id="qSk-iL-wpD"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="qSk-iL-wpD"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NGL-bB-gW1">
-                                        <rect key="frame" x="52.5" y="65" width="115" height="90"/>
+                                        <rect key="frame" x="19" y="65" width="200" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHF-is-QnH">
-                                                <rect key="frame" x="0.0" y="0.0" width="115" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="115" id="7LM-5g-Kcn"/>
+                                                    <constraint firstAttribute="width" constant="200" id="7LM-5g-Kcn"/>
                                                     <constraint firstAttribute="height" constant="40" id="fee-82-AEN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <state key="normal" title="Normal"/>
                                                 <connections>
                                                     <action selector="normalQuestionButtonTapped:" destination="c9c-Cj-GI1" eventType="touchUpInside" id="nS6-pu-fPA"/>
@@ -407,13 +409,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzI-Bi-02K">
-                                                <rect key="frame" x="0.0" y="50" width="115" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="200" height="40"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="115" id="b2c-J6-aZt"/>
+                                                    <constraint firstAttribute="width" constant="200" id="b2c-J6-aZt"/>
                                                     <constraint firstAttribute="height" constant="40" id="gVW-K3-RQb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <state key="normal" title="Missing"/>
                                                 <connections>
                                                     <action selector="missingNumberQuestionButtonTapped:" destination="c9c-Cj-GI1" eventType="touchUpInside" id="zeK-Sd-ytx"/>
@@ -425,16 +427,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-jb-bZV">
-                                <rect key="frame" x="326.5" y="909" width="115" height="90"/>
+                                <rect key="frame" x="87.5" y="552" width="200" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDI-aR-RU7">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Tg0-k4-cR5"/>
-                                            <constraint firstAttribute="width" constant="115" id="hSz-2c-cg7"/>
+                                            <constraint firstAttribute="width" constant="200" id="hSz-2c-cg7"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <state key="normal" title="Info"/>
                                         <connections>
                                             <action selector="infoButtonTapped:" destination="c9c-Cj-GI1" eventType="touchUpInside" id="3IN-0a-a2x"/>
@@ -442,13 +444,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pz8-7Y-MyN">
-                                        <rect key="frame" x="0.0" y="50" width="115" height="40"/>
+                                        <rect key="frame" x="0.0" y="50" width="200" height="40"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="V1G-EZ-w7S"/>
-                                            <constraint firstAttribute="width" constant="115" id="fNs-IK-GLc"/>
+                                            <constraint firstAttribute="width" constant="200" id="fNs-IK-GLc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="closeButtonTapped:" destination="c9c-Cj-GI1" eventType="touchUpInside" id="8SH-Wj-lof"/>
@@ -483,11 +485,11 @@
             <objects>
                 <viewController storyboardIdentifier="Settings" id="OVn-dN-gTE" customClass="SettingsViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="no7-d6-VAW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mY-ve-mes">
-                                <rect key="frame" x="254" y="50" width="260" height="60"/>
+                                <rect key="frame" x="57.5" y="50" width="260" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="4HF-WG-ycN">
                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -496,7 +498,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="Tar-um-CEh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="jrO-Cm-Xae"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -515,7 +517,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Amount" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-37-Tb5">
-                                <rect key="frame" x="252.5" y="320" width="263" height="60"/>
+                                <rect key="frame" x="40.5" y="260" width="294.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="2gO-0D-L8r"/>
                                     <constraint firstAttribute="height" constant="110" id="VKQ-ei-j5G">
@@ -524,7 +526,7 @@
                                     <constraint firstAttribute="height" constant="60" id="e2q-wZ-kyg"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="vOM-3I-gzP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -543,20 +545,20 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-v0-Q5U">
-                                <rect key="frame" x="269" y="140" width="230" height="150"/>
+                                <rect key="frame" x="102.5" y="120" width="170" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0eN-QU-mDx">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFc-1V-HL3">
-                                                <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="Kl9-XW-z2d"/>
                                                     <constraint firstAttribute="height" constant="50" id="Rje-1e-zPW"/>
                                                     <constraint firstAttribute="width" constant="50" id="YyE-5j-ixn"/>
                                                     <constraint firstAttribute="width" constant="70" id="b8g-dx-PYE"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="1" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -580,14 +582,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-fd-1nc">
-                                                <rect key="frame" x="80" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="60" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="TyR-XY-LWa"/>
                                                     <constraint firstAttribute="height" constant="70" id="XFO-lk-ith"/>
                                                     <constraint firstAttribute="height" constant="50" id="lpr-Yx-sD2"/>
                                                     <constraint firstAttribute="width" constant="50" id="nBi-Et-dNI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="2" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -611,14 +613,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-PK-QYA">
-                                                <rect key="frame" x="160" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="120" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="STM-K2-MR4"/>
                                                     <constraint firstAttribute="height" constant="70" id="ShP-9l-YQR"/>
                                                     <constraint firstAttribute="width" constant="70" id="e8k-9R-m8D"/>
                                                     <constraint firstAttribute="height" constant="50" id="hvL-Ma-4dP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="3" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -644,17 +646,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GKX-g8-aVS">
-                                        <rect key="frame" x="0.0" y="80" width="230" height="70"/>
+                                        <rect key="frame" x="0.0" y="60" width="170" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-SX-QA6">
-                                                <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="O1b-t4-js4"/>
                                                     <constraint firstAttribute="width" constant="70" id="Syg-Nz-xSn"/>
                                                     <constraint firstAttribute="height" constant="50" id="eES-UX-jat"/>
                                                     <constraint firstAttribute="width" constant="50" id="ngq-Jy-WZ9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="4" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -678,14 +680,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idx-UN-KET">
-                                                <rect key="frame" x="80" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="60" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="7yD-et-k8U"/>
                                                     <constraint firstAttribute="height" constant="50" id="Yk8-f3-XlN"/>
                                                     <constraint firstAttribute="width" constant="50" id="fbr-Ke-inF"/>
                                                     <constraint firstAttribute="height" constant="70" id="kDH-FU-3TO"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="5" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -709,14 +711,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yId-48-NR2">
-                                                <rect key="frame" x="160" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="120" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="Aui-sx-OL9"/>
                                                     <constraint firstAttribute="height" constant="70" id="CKt-v9-xao"/>
                                                     <constraint firstAttribute="height" constant="50" id="HKA-MN-8aW"/>
                                                     <constraint firstAttribute="width" constant="50" id="p3i-le-ctL"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="6" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -744,20 +746,20 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-RU-p2P">
-                                <rect key="frame" x="189" y="410" width="390" height="150"/>
+                                <rect key="frame" x="42.5" y="350" width="290" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-3Z-pfr">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBv-4O-9Lg">
-                                                <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="8gC-Jy-16R"/>
                                                     <constraint firstAttribute="width" constant="50" id="GBp-K8-xYN"/>
                                                     <constraint firstAttribute="width" constant="70" id="vGM-vx-FUm"/>
                                                     <constraint firstAttribute="height" constant="70" id="yUV-ah-KWR"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="5" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -781,14 +783,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atz-Sk-4Eq">
-                                                <rect key="frame" x="80" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="60" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="D1j-rR-QPc"/>
                                                     <constraint firstAttribute="height" constant="70" id="fFz-Gh-vgK"/>
                                                     <constraint firstAttribute="width" constant="70" id="ojX-LS-dpb"/>
                                                     <constraint firstAttribute="width" constant="50" id="wBg-ic-tWY"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="10" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -812,14 +814,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbS-k6-kSf">
-                                                <rect key="frame" x="160" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="120" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="4Po-tG-dEe"/>
                                                     <constraint firstAttribute="width" constant="70" id="AMG-d1-GDo"/>
                                                     <constraint firstAttribute="height" constant="50" id="ISM-yZ-D7X"/>
                                                     <constraint firstAttribute="width" constant="50" id="fRp-sM-olz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="15" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -843,14 +845,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-3z-ans">
-                                                <rect key="frame" x="240" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="180" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6mA-jE-C7u"/>
                                                     <constraint firstAttribute="height" constant="70" id="Iui-E9-Ee9"/>
                                                     <constraint firstAttribute="width" constant="50" id="TVk-av-YqN"/>
                                                     <constraint firstAttribute="width" constant="70" id="u9P-3h-d9R"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="20" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -874,14 +876,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ga5-QP-HdK">
-                                                <rect key="frame" x="320" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="240" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="0hB-XW-lR8"/>
                                                     <constraint firstAttribute="width" constant="50" id="N0Z-tL-UvV"/>
                                                     <constraint firstAttribute="height" constant="50" id="QlC-eI-98t"/>
                                                     <constraint firstAttribute="height" constant="70" id="fQY-py-VVq"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="25" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -907,17 +909,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="657-Wn-YGw">
-                                        <rect key="frame" x="0.0" y="80" width="390" height="70"/>
+                                        <rect key="frame" x="0.0" y="60" width="290" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlH-A4-Zgw">
-                                                <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="1Wz-gZ-NMc"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="NTh-R0-HZ7"/>
                                                     <constraint firstAttribute="height" constant="70" id="OCK-nV-Otg"/>
                                                     <constraint firstAttribute="width" constant="70" id="tP7-Ni-K0S"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="30" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -941,14 +943,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5v-0d-z00">
-                                                <rect key="frame" x="80" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="60" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="B3C-6Z-HsN"/>
                                                     <constraint firstAttribute="height" constant="70" id="Kft-ce-XTO"/>
                                                     <constraint firstAttribute="height" constant="50" id="Kvy-PF-J1q"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cMA-6m-cBD"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="35" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -972,14 +974,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEt-GC-4ua">
-                                                <rect key="frame" x="160" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="120" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="JeO-I1-yUC"/>
                                                     <constraint firstAttribute="width" constant="70" id="O9V-LO-xCk"/>
                                                     <constraint firstAttribute="height" constant="70" id="jGP-4m-ME4"/>
                                                     <constraint firstAttribute="height" constant="50" id="tt9-YS-f20"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="40" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1003,14 +1005,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-fK-YsD">
-                                                <rect key="frame" x="240" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="180" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="NAT-U3-zdq"/>
                                                     <constraint firstAttribute="width" constant="70" id="Vc0-3Y-bu3"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="qk0-Af-Bmx"/>
                                                     <constraint firstAttribute="height" constant="70" id="tiw-AC-r84"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="45" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1034,14 +1036,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gg-5n-hYH">
-                                                <rect key="frame" x="320" y="0.5" width="70" height="69"/>
+                                                <rect key="frame" x="240" y="0.5" width="50" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="YgX-dZ-Idq"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ffB-QV-Hsj"/>
                                                     <constraint firstAttribute="width" constant="70" id="nYi-5U-a3E"/>
                                                     <constraint firstAttribute="height" constant="70" id="tWH-rs-NG0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="50" backgroundImage="circle" catalog="system">
                                                     <color key="titleColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1069,13 +1071,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-Ve-ODW">
-                                <rect key="frame" x="326.5" y="959" width="115" height="40"/>
+                                <rect key="frame" x="87.5" y="602" width="200" height="40"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8me-pn-Xd7"/>
-                                    <constraint firstAttribute="width" constant="115" id="G4x-ea-VGG"/>
+                                    <constraint firstAttribute="width" constant="200" id="G4x-ea-VGG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <action selector="closeButtonTapped:" destination="OVn-dN-gTE" eventType="touchUpInside" id="JQR-px-stg"/>
@@ -1127,21 +1129,21 @@
             <objects>
                 <viewController storyboardIdentifier="CardView" id="EH2-vs-baN" customClass="CardViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FNf-i5-z3h">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcH-Mn-QpZ">
-                                <rect key="frame" x="0.0" y="74" width="768" height="950"/>
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-Fd-rSa">
-                                <rect key="frame" x="705.5" y="84" width="42.5" height="29.5"/>
+                                <rect key="frame" x="240" y="55" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="R8D-eA-k84"/>
                                     <constraint firstAttribute="height" constant="30" id="YVD-yr-W6b"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="YcQ-ef-XUV"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="zBM-X4-Phi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -1166,10 +1168,10 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-iR-mOn">
-                                <rect key="frame" x="184" y="775" width="400" height="170"/>
+                                <rect key="frame" x="32.5" y="487" width="310" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-SU-jTZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo3-eN-sa5">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
@@ -1186,7 +1188,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpk-Qk-Rac">
-                                                <rect key="frame" x="250" y="0.0" width="150" height="60"/>
+                                                <rect key="frame" x="160" y="0.0" width="150" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Rt6-6D-4ap"/>
                                                     <constraint firstAttribute="width" constant="150" id="oBn-5z-B5P"/>
@@ -1203,7 +1205,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="100"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pnI-DI-Z3f">
-                                        <rect key="frame" x="0.0" y="110" width="400" height="60"/>
+                                        <rect key="frame" x="0.0" y="70" width="310" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6S-Eh-LVw">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
@@ -1220,7 +1222,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cG-zr-rGl">
-                                                <rect key="frame" x="250" y="0.0" width="150" height="60"/>
+                                                <rect key="frame" x="160" y="0.0" width="150" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="Z2y-PA-IfM"/>
                                                     <constraint firstAttribute="height" constant="60" id="hMb-r9-GTs"/>
@@ -1240,10 +1242,10 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g82-Dx-hEJ">
-                                <rect key="frame" x="184" y="214" width="400" height="410"/>
+                                <rect key="frame" x="47.5" y="115" width="280" height="290"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-tp-CwE">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="430" id="5Fa-R7-LeP">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="200"/>
@@ -1281,7 +1283,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umM-Pl-lVI">
-                                        <rect key="frame" x="0.0" y="210" width="400" height="200"/>
+                                        <rect key="frame" x="0.0" y="150" width="280" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="DDZ-NJ-aNh">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="230"/>
@@ -1321,14 +1323,14 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-6D-LrU">
-                                <rect key="frame" x="20" y="84" width="185" height="30"/>
+                                <rect key="frame" x="35" y="55" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="CAs-1s-UxV"/>
                                     <constraint firstAttribute="height" constant="30" id="IPQ-IT-oz7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="NX3-ZH-tDi"/>
                                     <constraint firstAttribute="height" constant="30" id="ufN-4G-7N9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -1347,12 +1349,12 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw6-5M-4Dk">
-                                <rect key="frame" x="20" y="22" width="58" height="42"/>
+                                <rect key="frame" x="35" y="10" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="B2L-l7-1nI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="yY8-yy-C7K"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1493,46 +1495,46 @@
             <objects>
                 <viewController storyboardIdentifier="ReadyView" id="MBc-DS-3hW" customClass="ReadyViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVk-cK-uhL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MOh-LX-N2H">
-                                <rect key="frame" x="259" y="434.5" width="250" height="155"/>
+                                <rect key="frame" x="57" y="256" width="261.5" height="155"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTA-eq-hVS">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="261.5" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="2JA-JY-0N0"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="2JA-JY-0N0"/>
                                             <constraint firstAttribute="height" constant="40" id="d1M-SA-zHf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dpg-0p-BcW">
-                                        <rect key="frame" x="67.5" y="65" width="115" height="90"/>
+                                        <rect key="frame" x="30.5" y="65" width="200" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwA-CM-9Bn">
-                                                <rect key="frame" x="0.0" y="0.0" width="115" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="115" id="NSe-nv-An3"/>
+                                                    <constraint firstAttribute="width" constant="200" id="NSe-nv-An3"/>
                                                     <constraint firstAttribute="height" constant="40" id="zik-lU-Bsa"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <state key="normal" title="Start"/>
                                                 <connections>
                                                     <action selector="startButtonTapped:" destination="MBc-DS-3hW" eventType="touchUpInside" id="abf-rQ-KT8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-hb-wSr">
-                                                <rect key="frame" x="0.0" y="50" width="115" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="200" height="40"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="115" id="BoF-kh-iNj"/>
+                                                    <constraint firstAttribute="width" constant="200" id="BoF-kh-iNj"/>
                                                     <constraint firstAttribute="height" constant="40" id="wc1-6t-WV9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                 <state key="normal" title="Stop"/>
                                                 <connections>
                                                     <action selector="stopButtonTapped:" destination="MBc-DS-3hW" eventType="touchUpInside" id="fqy-Ea-Z3E"/>
@@ -1565,14 +1567,14 @@
             <objects>
                 <viewController storyboardIdentifier="Results" id="Dpq-nr-3ag" customClass="ResultsViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hO0-cN-lQa">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IUu-JY-sFc">
-                                <rect key="frame" x="84" y="50" width="600" height="460"/>
+                                <rect key="frame" x="28.5" y="50" width="318.5" height="332.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPo-Ot-rYv">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="318.5" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="6MT-hr-Kn0">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -1581,7 +1583,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="q8n-XD-gMm"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="wZj-Am-68O"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1600,9 +1602,9 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions completed: 10" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z3-fa-PTw">
-                                        <rect key="frame" x="0.0" y="80" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="70" width="318.5" height="36.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="JmG-Vj-sXm"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="JmG-Vj-sXm"/>
                                             <constraint firstAttribute="height" constant="45" id="PDd-yL-ALq"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="e9t-k2-qce">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -1610,7 +1612,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="g0A-h7-bTO"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="syQ-cP-E5z"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1631,16 +1633,16 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answers: 100" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yu-Bz-B2e">
-                                        <rect key="frame" x="0.0" y="160" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="126.5" width="318.5" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="51H-yC-qQE"/>
                                             <constraint firstAttribute="height" constant="70" id="7be-j6-uJU">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="25" id="CuU-iE-p7Y"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="CuU-iE-p7Y"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="F9T-Hp-yGt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1659,16 +1661,16 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Answers: 100" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOu-GQ-knY">
-                                        <rect key="frame" x="0.0" y="240" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="183" width="318.5" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="2Fo-ZX-RJ8">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                             </constraint>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="XmS-cO-q2o"/>
-                                            <constraint firstAttribute="height" constant="25" id="fdK-wo-GV4"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="fdK-wo-GV4"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="vcr-wb-zXn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1687,16 +1689,16 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy: 100%" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-3e-DTf">
-                                        <rect key="frame" x="0.0" y="320" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="239.5" width="318.5" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="GcI-e1-HHe"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="HCW-18-SMM"/>
-                                            <constraint firstAttribute="height" constant="25" id="bTZ-ng-6BJ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="bTZ-ng-6BJ"/>
                                             <constraint firstAttribute="height" constant="80" id="wCA-9u-d1t">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                             </constraint>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1715,16 +1717,16 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 000" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CD-9B-9Uv">
-                                        <rect key="frame" x="0.0" y="400" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="296" width="318.5" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="0YT-cd-G04"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="2dM-fz-lvk"/>
                                             <constraint firstAttribute="height" constant="80" id="Bq9-Pb-OyG">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="25" id="Lj5-5g-Ym6"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Lj5-5g-Ym6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -1745,7 +1747,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6zz-Yp-Xgq">
-                                <rect key="frame" x="284" y="909" width="200" height="90"/>
+                                <rect key="frame" x="87.5" y="552" width="200" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNf-fS-P5s">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -1754,7 +1756,7 @@
                                             <constraint firstAttribute="height" constant="40" id="bTD-Eo-SEi"/>
                                             <constraint firstAttribute="width" constant="200" id="nBx-yd-FAq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <state key="normal" title="Leaderboard"/>
                                         <connections>
                                             <action selector="leaderboardButtonTapped:" destination="Dpq-nr-3ag" eventType="touchUpInside" id="RDa-8g-Ouy"/>
@@ -1767,7 +1769,7 @@
                                             <constraint firstAttribute="width" constant="200" id="1Cd-VL-U8x"/>
                                             <constraint firstAttribute="height" constant="40" id="rLs-zh-sjN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                         <state key="normal" title="Done"/>
                                         <connections>
                                             <action selector="doneButtonTapped:" destination="Dpq-nr-3ag" eventType="touchUpInside" id="dYh-rn-47s"/>
@@ -1804,14 +1806,14 @@
             <objects>
                 <viewController storyboardIdentifier="AnswerView" id="izf-Yc-CUt" customClass="AnswerViewController" customModule="MentalMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCo-Ov-Gi6">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="OYh-qb-Mhb">
-                                <rect key="frame" x="34" y="137" width="700" height="710"/>
+                                <rect key="frame" x="37.5" y="118.5" width="300" height="390"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-JH-vag">
-                                        <rect key="frame" x="225" y="0.5" width="250" height="249"/>
+                                        <rect key="frame" x="75" y="0.5" width="150" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="MYE-xK-0q6"/>
                                             <constraint firstAttribute="height" constant="150" id="Vvy-0b-AFf"/>
@@ -1839,13 +1841,13 @@
                                         </variation>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5BW-Pa-gNi">
-                                        <rect key="frame" x="0.0" y="300" width="700" height="410"/>
+                                        <rect key="frame" x="0.0" y="200" width="300" height="190"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QIu-Al-JG3">
-                                                <rect key="frame" x="0.0" y="0.0" width="700" height="195"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="85"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23z-Yv-1lT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="750" id="9Xz-E9-g2l">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="700"/>
@@ -1854,7 +1856,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Tvw-HT-HRe"/>
                                                             <constraint firstAttribute="height" constant="35" id="ii4-WQ-tyX"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -1866,14 +1868,14 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <mask key="constraints">
                                                                 <include reference="9Xz-E9-g2l"/>
-                                                                <include reference="Fgx-mY-0so"/>
+                                                                <exclude reference="Fgx-mY-0so"/>
                                                                 <exclude reference="Tvw-HT-HRe"/>
                                                                 <exclude reference="ii4-WQ-tyX"/>
                                                             </mask>
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 + 0 = 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-6K-aX6">
-                                                        <rect key="frame" x="0.0" y="105" width="700" height="90"/>
+                                                        <rect key="frame" x="0.0" y="50" width="300" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="0he-Cc-Wk8"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="750" id="aB5-oJ-41b">
@@ -1882,7 +1884,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="gVt-gS-v2U"/>
                                                             <constraint firstAttribute="height" constant="90" id="hle-vL-shs"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -1896,17 +1898,17 @@
                                                                 <exclude reference="0he-Cc-Wk8"/>
                                                                 <include reference="aB5-oJ-41b"/>
                                                                 <exclude reference="gVt-gS-v2U"/>
-                                                                <include reference="hle-vL-shs"/>
+                                                                <exclude reference="hle-vL-shs"/>
                                                             </mask>
                                                         </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-Tg-XnL">
-                                                <rect key="frame" x="0.0" y="215" width="700" height="195"/>
+                                                <rect key="frame" x="0.0" y="105" width="300" height="85"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-k4-EVF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="4vC-JK-py6"/>
                                                             <constraint firstAttribute="height" constant="90" id="7BW-QC-ldq"/>
@@ -1915,7 +1917,7 @@
                                                             </constraint>
                                                             <constraint firstAttribute="height" constant="35" id="zaW-9M-RRm"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -1927,14 +1929,14 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <mask key="constraints">
                                                                 <exclude reference="4vC-JK-py6"/>
-                                                                <include reference="7BW-QC-ldq"/>
+                                                                <exclude reference="7BW-QC-ldq"/>
                                                                 <include reference="GB8-kW-SjE"/>
                                                                 <exclude reference="zaW-9M-RRm"/>
                                                             </mask>
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 + 0 = 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVB-Gi-BTO">
-                                                        <rect key="frame" x="0.0" y="105" width="700" height="90"/>
+                                                        <rect key="frame" x="0.0" y="50" width="300" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="BlI-QE-Nc5"/>
                                                             <constraint firstAttribute="height" constant="90" id="GQM-Ar-thS"/>
@@ -1943,7 +1945,7 @@
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="700"/>
                                                             </constraint>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -1955,7 +1957,7 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <mask key="constraints">
                                                                 <exclude reference="BlI-QE-Nc5"/>
-                                                                <include reference="GQM-Ar-thS"/>
+                                                                <exclude reference="GQM-Ar-thS"/>
                                                                 <exclude reference="apV-S2-yVL"/>
                                                                 <include reference="vaZ-0L-MDm"/>
                                                             </mask>
@@ -1968,13 +1970,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHi-JC-slf">
-                                <rect key="frame" x="326.5" y="959" width="115" height="40"/>
+                                <rect key="frame" x="87.5" y="602" width="200" height="40"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="4vt-0b-Jks"/>
+                                    <constraint firstAttribute="width" constant="200" id="4vt-0b-Jks"/>
                                     <constraint firstAttribute="height" constant="40" id="kLE-BD-mkW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SigmarOne-Regular" family="Sigmar One" pointSize="22"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="izf-Yc-CUt" eventType="touchUpInside" id="Mjy-wT-Pma"/>

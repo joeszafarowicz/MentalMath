@@ -18,7 +18,6 @@ class QuestionInfoViewController: UIViewController {
         backgroundView.backgroundColor = backgroundColor
         backgroundView.layer.cornerRadius = 15.0
         backgroundView.clipsToBounds = true
-        setupButton(button: closeButton, title: "Close", answerButton: false)
     }
     
     @IBAction func closeButtonTapped(_ sender: UIButton) {

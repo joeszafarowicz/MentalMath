@@ -148,36 +148,6 @@ class CardViewController: UIViewController {
     func questionOrder() {
         setNumbers()
         
-        if (defaults.bool(forKey: "fiveQuestions") == false) && (defaults.bool(forKey: "tenQuestions") == false) && (defaults.bool(forKey: "fifteenQuestions") == false) && (defaults.bool(forKey: "twentyQuestions") == false) &&
-            (defaults.bool(forKey: "twentyfiveQuestions") == false) &&
-            (defaults.bool(forKey: "thirtyQuestions") == false) &&
-            (defaults.bool(forKey: "thirtyfiveQuestions") == false) &&
-            (defaults.bool(forKey: "fourtyQuestions") == false) &&
-            (defaults.bool(forKey: "fourtyfiveQuestions") == false) &&
-            (defaults.bool(forKey: "fiftyQuestions") == false) {
-            defaults.set(false, forKey: "fiveQuestions")
-            defaults.set(true, forKey: "tenQuestions")
-            defaults.set(false, forKey: "fifteenQuestions")
-            defaults.set(false, forKey: "twentyQuestions")
-            defaults.set(false, forKey: "twentyfiveQuestions")
-            defaults.set(false, forKey: "thirtyQuestions")
-            defaults.set(false, forKey: "thirtyfiveQuestions")
-            defaults.set(false, forKey: "fourtyQuestions")
-            defaults.set(false, forKey: "fourtyfiveQuestions")
-            defaults.set(false, forKey: "fiftyQuestions")
-        }
-        
-        if (defaults.bool(forKey: "levelOne") == false) && (defaults.bool(forKey: "levelTwo") == false) && (defaults.bool(forKey: "levelThree") == false) && (defaults.bool(forKey: "levelFour") == false) &&
-            (defaults.bool(forKey: "levelFive") == false) &&
-            (defaults.bool(forKey: "levelSix") == false) {
-            defaults.set(false, forKey: "levelOne")
-            defaults.set(true, forKey: "levelTwo")
-            defaults.set(false, forKey: "levelThree")
-            defaults.set(false, forKey: "levelFour")
-            defaults.set(false, forKey: "levelFive")
-            defaults.set(false, forKey: "levelSix")
-        }
-        
         if (defaults.bool(forKey: "fiveQuestions") == true) {
             checkEquation()
             questionNumber = 5
