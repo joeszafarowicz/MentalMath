@@ -21,6 +21,8 @@
 		CFBD813F24801A87008A668E /* QuestionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD813924801661008A668E /* QuestionInfoViewController.swift */; };
 		CFBD814024801A89008A668E /* QuestionTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD813A24801661008A668E /* QuestionTypesViewController.swift */; };
 		CFBD814124801AB0008A668E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1448A92474142100C184F5 /* ResultsViewController.swift */; };
+		CFCCA63625FBAF0200B98DE9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCA63525FBAF0200B98DE9 /* Functions.swift */; };
+		CFCCA63925FBAF0900B98DE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCA63825FBAF0900B98DE9 /* Extensions.swift */; };
 		CFDB3C5125C0BD9900F3FCFB /* SigmarOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFDB3C4F25C0BB5200F3FCFB /* SigmarOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		CFBD813924801661008A668E /* QuestionInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInfoViewController.swift; sourceTree = "<group>"; };
 		CFBD813A24801661008A668E /* QuestionTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTypesViewController.swift; sourceTree = "<group>"; };
 		CFBD813B24801661008A668E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFCCA63525FBAF0200B98DE9 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		CFCCA63825FBAF0900B98DE9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CFDB3C4F25C0BB5200F3FCFB /* SigmarOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SigmarOne-Regular.ttf"; path = "../../Sigmar_One/SigmarOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,27 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CF1448A42474141200C184F5 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				CFBD813B24801661008A668E /* HomeViewController.swift */,
-				CFBD813A24801661008A668E /* QuestionTypesViewController.swift */,
-				CFBD813924801661008A668E /* QuestionInfoViewController.swift */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		CF1448A82474142000C184F5 /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				CF79903624733AF7008B8CF9 /* ReadyViewController.swift */,
-				CF41988F2472DDB000BD37B3 /* CardViewController.swift */,
-				CF3678A0247372A80011A900 /* AnswerViewController.swift */,
-				CF1448A92474142100C184F5 /* ResultsViewController.swift */,
-			);
-			path = Cards;
-			sourceTree = "<group>";
-		};
 		CF4198422472D86800BD37B3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +81,8 @@
 				CF41984E2472D86800BD37B3 /* AppDelegate.swift */,
 				CF4198502472D86800BD37B3 /* SceneDelegate.swift */,
 				CF49BB8125C07C4900CCE24D /* Main.storyboard */,
-				CF1448A42474141200C184F5 /* Main */,
-				CF1448A82474142000C184F5 /* Cards */,
-				CF79903D24734FDD008B8CF9 /* Settings */,
-				CF4198842472DBDE00BD37B3 /* Models */,
+				CF79903D24734FDD008B8CF9 /* Controllers */,
+				CFCCA63B25FBB7A700B98DE9 /* Helpers */,
 				CF4198572472D86900BD37B3 /* Assets.xcassets */,
 				CF4198592472D86900BD37B3 /* LaunchScreen.storyboard */,
 				CF41985C2472D86900BD37B3 /* Info.plist */,
@@ -110,20 +91,29 @@
 			path = MentalMath;
 			sourceTree = "<group>";
 		};
-		CF4198842472DBDE00BD37B3 /* Models */ = {
+		CF79903D24734FDD008B8CF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFBD813B24801661008A668E /* HomeViewController.swift */,
+				CFBD813A24801661008A668E /* QuestionTypesViewController.swift */,
+				CFBD813924801661008A668E /* QuestionInfoViewController.swift */,
+				CF79903624733AF7008B8CF9 /* ReadyViewController.swift */,
+				CF41988F2472DDB000BD37B3 /* CardViewController.swift */,
+				CF3678A0247372A80011A900 /* AnswerViewController.swift */,
+				CF1448A92474142100C184F5 /* ResultsViewController.swift */,
+				CF79903A247348C1008B8CF9 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFCCA63B25FBB7A700B98DE9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				CF4198862472DBDF00BD37B3 /* Variables.swift */,
+				CFCCA63525FBAF0200B98DE9 /* Functions.swift */,
+				CFCCA63825FBAF0900B98DE9 /* Extensions.swift */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CF79903D24734FDD008B8CF9 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				CF79903A247348C1008B8CF9 /* SettingsViewController.swift */,
-			);
-			path = Settings;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +196,11 @@
 				CFBD814124801AB0008A668E /* ResultsViewController.swift in Sources */,
 				CFBD813F24801A87008A668E /* QuestionInfoViewController.swift in Sources */,
 				CF3678A1247372A80011A900 /* AnswerViewController.swift in Sources */,
+				CFCCA63925FBAF0900B98DE9 /* Extensions.swift in Sources */,
 				CF79903B247348C1008B8CF9 /* SettingsViewController.swift in Sources */,
 				CF4198512472D86800BD37B3 /* SceneDelegate.swift in Sources */,
 				CFBD813E24801A84008A668E /* HomeViewController.swift in Sources */,
+				CFCCA63625FBAF0200B98DE9 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.10;
+				CURRENT_PROJECT_VERSION = 1.0.11;
 				DEVELOPMENT_TEAM = 24WZU35MAF;
 				INFOPLIST_FILE = "$(SRCROOT)/MentalMath/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephszafarowicz.MentalMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -367,14 +359,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.10;
+				CURRENT_PROJECT_VERSION = 1.0.11;
 				DEVELOPMENT_TEAM = 24WZU35MAF;
 				INFOPLIST_FILE = "$(SRCROOT)/MentalMath/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephszafarowicz.MentalMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

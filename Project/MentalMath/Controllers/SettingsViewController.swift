@@ -11,14 +11,12 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
-    
     @IBOutlet weak var levelOneButton: UIButton!
     @IBOutlet weak var levelTwoButton: UIButton!
     @IBOutlet weak var levelThreeButton: UIButton!
     @IBOutlet weak var levelFourButton: UIButton!
     @IBOutlet weak var levelFiveButton: UIButton!
     @IBOutlet weak var levelSixButton: UIButton!
-    
     @IBOutlet weak var fiveQuestionsButton: UIButton!
     @IBOutlet weak var tenQuestionsButton: UIButton!
     @IBOutlet weak var fifteenQuestionsButton: UIButton!
@@ -39,7 +37,9 @@ class SettingsViewController: UIViewController {
     }
     
     func checkLevel() {
-        if defaults.bool(forKey: "levelOne") == true {
+        let level = (defaults.integer(forKey: "levelDifficulty"))
+        switch level {
+        case 1:
             levelOneButton.setTitleColor(backgroundColor, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -53,7 +53,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "levelTwo") == true {
+        case 2:
             levelOneButton.setTitleColor(UIColor.white, for: .normal)
             levelTwoButton.setTitleColor(backgroundColor, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -67,7 +67,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "levelThree") == true {
+        case 3:
             levelOneButton.setTitleColor(UIColor.white, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(backgroundColor, for: .normal)
@@ -81,7 +81,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "levelFour") == true {
+        case 4:
             levelOneButton.setTitleColor(UIColor.white, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -95,7 +95,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "levelFive") == true {
+        case 5:
             levelOneButton.setTitleColor(UIColor.white, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -109,7 +109,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "levelSix") == true {
+        case 6:
             levelOneButton.setTitleColor(UIColor.white, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -123,7 +123,7 @@ class SettingsViewController: UIViewController {
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelSixButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
-        } else {
+        default:
             levelOneButton.setTitleColor(backgroundColor, for: .normal)
             levelTwoButton.setTitleColor(UIColor.white, for: .normal)
             levelThreeButton.setTitleColor(UIColor.white, for: .normal)
@@ -131,17 +131,17 @@ class SettingsViewController: UIViewController {
             levelFiveButton.setTitleColor(UIColor.white, for: .normal)
             levelSixButton.setTitleColor(UIColor.white, for: .normal)
             
-            levelOneButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
+            levelOneButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
             levelTwoButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelThreeButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFourButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             levelFiveButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-            levelSixButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
+            levelSixButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
         }
     }
     
     func checkQuestionAmount() {
-        if defaults.bool(forKey: "fiveQuestions") == true {
+        if (defaults.integer(forKey: "numberOfQuestions")) == 5 {
             fiveQuestionsButton.setTitleColor(backgroundColor, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -163,7 +163,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "tenQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 10 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(backgroundColor, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -185,7 +185,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "fifteenQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 15 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(backgroundColor, for: .normal)
@@ -207,7 +207,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "twentyQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 20 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -229,7 +229,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "twentyfiveQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 25 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -251,7 +251,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "thirtyQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 30 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -273,7 +273,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "thirtyfiveQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 35 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -295,7 +295,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "fourtyQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 40 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -317,7 +317,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "fourtyfiveQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 45 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -339,7 +339,7 @@ class SettingsViewController: UIViewController {
             fourtyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
             fourtyFiveQuestionsButton.setBackgroundImage(UIImage(systemName: "circle.fill"), for: .normal)
             fiftyQuestionsButton.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-        } else if defaults.bool(forKey: "fiftyQuestions") == true {
+        } else if (defaults.integer(forKey: "numberOfQuestions")) == 50 {
             fiveQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             tenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
             fifteenQuestionsButton.setTitleColor(UIColor.white, for: .normal)
@@ -388,217 +388,97 @@ class SettingsViewController: UIViewController {
     
     @IBAction func levelOneButtonTapped(_ sender: UIButton) {
         animateButton(levelOneButton)
-        defaults.set(true, forKey: "levelOne")
-        defaults.set(false, forKey: "levelTwo")
-        defaults.set(false, forKey: "levelThree")
-        defaults.set(false, forKey: "levelFour")
-        defaults.set(false, forKey: "levelFive")
-        defaults.set(false, forKey: "levelSix")
+        defaults.setValue(1, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func levelTwoButtonTapped(_ sender: UIButton) {
         animateButton(levelTwoButton)
-        defaults.set(false, forKey: "levelOne")
-        defaults.set(true, forKey: "levelTwo")
-        defaults.set(false, forKey: "levelThree")
-        defaults.set(false, forKey: "levelFour")
-        defaults.set(false, forKey: "levelFive")
-        defaults.set(false, forKey: "levelSix")
+        defaults.setValue(2, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func levelThreeButtonTapped(_ sender: UIButton) {
         animateButton(levelThreeButton)
-        defaults.set(false, forKey: "levelOne")
-        defaults.set(false, forKey: "levelTwo")
-        defaults.set(true, forKey: "levelThree")
-        defaults.set(false, forKey: "levelFour")
-        defaults.set(false, forKey: "levelFive")
-        defaults.set(false, forKey: "levelSix")
+        defaults.setValue(3, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func levelFourButtonTapped(_ sender: UIButton) {
         animateButton(levelFourButton)
-        defaults.set(false, forKey: "levelOne")
-        defaults.set(false, forKey: "levelTwo")
-        defaults.set(false, forKey: "levelThree")
-        defaults.set(true, forKey: "levelFour")
-        defaults.set(false, forKey: "levelFive")
-        defaults.set(false, forKey: "levelSix")
+        defaults.setValue(4, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func levelFiveButtonTapped(_ sender: UIButton) {
         animateButton(levelFiveButton)
-        defaults.set(false, forKey: "levelOne")
-        defaults.set(false, forKey: "levelTwo")
-        defaults.set(false, forKey: "levelThree")
-        defaults.set(false, forKey: "levelFour")
-        defaults.set(true, forKey: "levelFive")
-        defaults.set(false, forKey: "levelSix")
+        defaults.setValue(5, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func levelSixButtonTapped(_ sender: UIButton) {
         animateButton(levelSixButton)
-        defaults.set(false, forKey: "levelOne")
-        defaults.set(false, forKey: "levelTwo")
-        defaults.set(false, forKey: "levelThree")
-        defaults.set(false, forKey: "levelFour")
-        defaults.set(false, forKey: "levelFive")
-        defaults.set(true, forKey: "levelSix")
+        defaults.setValue(6, forKey: "levelDifficulty")
         checkLevel()
     }
     
     @IBAction func fiveQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(fiveQuestionsButton)
-        defaults.set(true, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(5, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func tenQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(tenQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(true, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(10, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func fifteenQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(fifteenQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(true, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(15, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func twentyQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(twentyQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(true, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(20, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func twentyFiveQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(twentyFiveQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(true, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(25, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func thirtyQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(thirtyQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(true, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(30, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func thirtyFiveQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(thirtyFiveQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(true, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(35, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func fourtyQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(fourtyQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(true, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(40, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func fourtyFiveQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(fourtyFiveQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(true, forKey: "fourtyfiveQuestions")
-        defaults.set(false, forKey: "fiftyQuestions")
+        defaults.setValue(45, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     
     @IBAction func fiftyQuestionsButtonTapped(_ sender: UIButton) {
         animateButton(fiftyQuestionsButton)
-        defaults.set(false, forKey: "fiveQuestions")
-        defaults.set(false, forKey: "tenQuestions")
-        defaults.set(false, forKey: "fifteenQuestions")
-        defaults.set(false, forKey: "twentyQuestions")
-        defaults.set(false, forKey: "twentyfiveQuestions")
-        defaults.set(false, forKey: "thirtyQuestions")
-        defaults.set(false, forKey: "thirtyfiveQuestions")
-        defaults.set(false, forKey: "fourtyQuestions")
-        defaults.set(false, forKey: "fourtyfiveQuestions")
-        defaults.set(true, forKey: "fiftyQuestions")
+        defaults.setValue(50, forKey: "numberOfQuestions")
         checkQuestionAmount()
     }
     

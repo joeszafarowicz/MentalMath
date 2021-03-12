@@ -8,7 +8,6 @@
 
 import UIKit
 import GameKit
-import StoreKit
 
 class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
 
@@ -51,10 +50,6 @@ class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
             }
         }
         unlockAchievements()
-        defaults.set((defaults.integer(forKey: "userViewedCounter") + 1), forKey: "userViewedCounter")
-        if defaults.integer(forKey: "userViewedCounter") == 5 {
-            SKStoreReviewController.requestReview()
-        }
     }
     
     func authenticateLocalPlayer() {
@@ -81,85 +76,65 @@ class ResultsViewController: UIViewController, GKGameCenterControllerDelegate {
         gameCenterViewController.dismiss(animated: true, completion: nil)
     }
     
-    func unlockAchievements(){
+    func unlockAchievements() {
         if correctAnswers == 5 {
             let achievement = GKAchievement(identifier: "com.mentalmath.fiveoutoffive")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 10 {
             let achievement = GKAchievement(identifier: "com.mentalmath.tenoutoften")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 15 {
             let achievement = GKAchievement(identifier: "com.mentalmath.fifteenoutoffifteen")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 20 {
             let achievement = GKAchievement(identifier: "com.mentalmath.twentyoutoftwenty")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 25 {
             let achievement = GKAchievement(identifier: "com.mentalmath.twentyfiveoutoftwentyfive")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 30 {
             let achievement = GKAchievement(identifier: "com.mentalmath.thirtyoutofthirty")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 35 {
             let achievement = GKAchievement(identifier: "com.mentalmath.thirtyfiveoutofthirtyfive")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 40 {
             let achievement = GKAchievement(identifier: "com.mentalmath.fourtyoutoffourty")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 45 {
             let achievement = GKAchievement(identifier: "com.mentalmath.fourtyfiveoutoffourtyfive")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
         if correctAnswers == 50 {
             let achievement = GKAchievement(identifier: "com.mentalmath.fiftyoutoffifty")
-            
             achievement.percentComplete = Double(100)
             achievement.showsCompletionBanner = true
-            
             GKAchievement.report([achievement], withCompletionHandler: nil)
         }
     }

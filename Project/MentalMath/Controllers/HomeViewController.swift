@@ -35,8 +35,6 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
             } else if (localPlayer.isAuthenticated) {
                 // Player is already authenticated & logged in, load game center
                 gcEnabled = true
-                
-                // Get the default leaderboard ID
                 localPlayer.loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifer, error) in
                     if error != nil { print(error!)
                     } else { gcDefaultLeaderBoard = leaderboardIdentifer! }

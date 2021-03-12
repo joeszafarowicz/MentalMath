@@ -10,23 +10,6 @@ import UIKit
 
 class CardViewController: UIViewController {
     
-    var questionNumber = 0
-    var randomNumber1: Int = 0
-    var randomNumber2: Int = 0
-    var randomNumber3: Int = 0
-    var randomNumber4: Int = 0
-    var random1: Int = 0
-    var random2: Int = 0
-    var random3: Int = 0
-    var random4: Int = 0
-    var bottomRandomNumber: Int = 0
-    var topRandomNumber: Int = 0
-    var randomString1: String = ""
-    var randomString2: String = ""
-    var randomString3: String = ""
-    var randomString4: String = ""
-    var missingNumberSequenceTop: Bool = false
-    
     @IBOutlet weak var cardImageView: UIImageView!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -40,7 +23,6 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         getPossibleAnswers()
         cardImageView.layer.cornerRadius = 15.0
         cardImageView.clipsToBounds = true
@@ -146,48 +128,10 @@ class CardViewController: UIViewController {
     }
     
     func questionOrder() {
-        setNumbers()
+        setQuestionNumbers()
         
-        if (defaults.bool(forKey: "fiveQuestions") == true) {
-            checkEquation()
-            questionNumber = 5
-        }
-        if (defaults.bool(forKey: "tenQuestions") == true) {
-            checkEquation()
-            questionNumber = 10
-        }
-        if (defaults.bool(forKey: "fifteenQuestions") == true) {
-            checkEquation()
-            questionNumber = 15
-        }
-        if (defaults.bool(forKey: "twentyQuestions") == true) {
-            checkEquation()
-            questionNumber = 20
-        }
-        if (defaults.bool(forKey: "twentyfiveQuestions") == true) {
-            checkEquation()
-            questionNumber = 25
-        }
-        if (defaults.bool(forKey: "thirtyQuestions") == true) {
-            checkEquation()
-            questionNumber = 30
-        }
-        if (defaults.bool(forKey: "thirtyfiveQuestions") == true) {
-            checkEquation()
-            questionNumber = 35
-        }
-        if (defaults.bool(forKey: "fourtyQuestions") == true) {
-            checkEquation()
-            questionNumber = 40
-        }
-        if (defaults.bool(forKey: "fourtyfiveQuestions") == true) {
-            checkEquation()
-            questionNumber = 45
-        }
-        if (defaults.bool(forKey: "fiftyQuestions") == true) {
-            checkEquation()
-            questionNumber = 50
-        }
+        checkEquation()
+        questionNumber = (defaults.integer(forKey: "numberOfQuestions"))
         
         if checkQuestion >= questionNumber {
             checkQuestion = 0
@@ -196,33 +140,33 @@ class CardViewController: UIViewController {
         }
     }
     
-    // Checks and sets question numbers
-    func setNumbers() {
+    func setQuestionNumbers() {
         var randomQuestionNumber = 0
         var randomQuestionNumberBottom = 0
-        if (defaults.bool(forKey: "levelOne") == true) {
+        
+        let level = (defaults.integer(forKey: "levelDifficulty"))
+        switch level {
+        case 1:
             randomQuestionNumber = 11
             randomQuestionNumberBottom = 6
-        }
-        if (defaults.bool(forKey: "levelTwo") == true) {
+        case 2:
             randomQuestionNumber = 21
             randomQuestionNumberBottom = 11
-        }
-        if (defaults.bool(forKey: "levelThree") == true) {
+        case 3:
             randomQuestionNumber = 51
             randomQuestionNumberBottom = 21
-        }
-        if (defaults.bool(forKey: "levelFour") == true) {
+        case 4:
             randomQuestionNumber = 101
             randomQuestionNumberBottom = 51
-        }
-        if (defaults.bool(forKey: "levelFive") == true) {
+        case 5:
             randomQuestionNumber = 501
             randomQuestionNumberBottom = 251
-        }
-        if (defaults.bool(forKey: "levelSix") == true) {
+        case 6:
             randomQuestionNumber = 1001
             randomQuestionNumberBottom = 501
+        default:
+            randomQuestionNumber = 11
+            randomQuestionNumberBottom = 6
         }
         
         topRandomNumber = Int(arc4random_uniform(UInt32(randomQuestionNumber)))
@@ -234,7 +178,6 @@ class CardViewController: UIViewController {
         }
     }
     
-    // Sets button titles
     func setAnswerTitle() {
         // Random array that sets answer to specific button
         let array = ["Button1", "Button2", "Button3", "Button4"]

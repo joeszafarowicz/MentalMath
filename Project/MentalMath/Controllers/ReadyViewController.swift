@@ -15,7 +15,6 @@ class ReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = backgroundColor
         setupButton(button: startButton, title: "Start", answerButton: false)
         setupButton(button: stopButton, title: "Stop", answerButton: false)

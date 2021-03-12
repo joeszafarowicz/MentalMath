@@ -52,37 +52,7 @@ class AnswerViewController: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         animateButton(nextButton)
-        
-        if (defaults.bool(forKey: "fiveQuestions") == true) {
-            questionNumber = 5
-        }
-        if (defaults.bool(forKey: "tenQuestions") == true) {
-            questionNumber = 10
-        }
-        if (defaults.bool(forKey: "fifteenQuestions") == true) {
-            questionNumber = 15
-        }
-        if (defaults.bool(forKey: "twentyQuestions") == true) {
-            questionNumber = 20
-        }
-        if (defaults.bool(forKey: "twentyfiveQuestions") == true) {
-            questionNumber = 25
-        }
-        if (defaults.bool(forKey: "thirtyQuestions") == true) {
-            questionNumber = 30
-        }
-        if (defaults.bool(forKey: "thirtyfiveQuestions") == true) {
-            questionNumber = 35
-        }
-        if (defaults.bool(forKey: "fourtyQuestions") == true) {
-            questionNumber = 40
-        }
-        if (defaults.bool(forKey: "fourtyfiveQuestions") == true) {
-            questionNumber = 45
-        }
-        if (defaults.bool(forKey: "fiftyQuestions") == true) {
-            questionNumber = 50
-        }
+        questionNumber = (defaults.integer(forKey: "numberOfQuestions"))
         
         if checkQuestion == questionNumber {
             let story = UIStoryboard(name: "Main", bundle:nil)
