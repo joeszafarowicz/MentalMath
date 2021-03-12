@@ -24,8 +24,4 @@ class QuestionInfoViewController: UIViewController {
         animateButton(closeButton)
         dismiss(animated: true, completion: nil)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
