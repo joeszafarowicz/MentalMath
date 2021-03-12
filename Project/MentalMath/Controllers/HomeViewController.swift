@@ -27,7 +27,6 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
     
     func authenticateLocalPlayer() {
         let localPlayer: GKLocalPlayer = GKLocalPlayer.local
-        
         localPlayer.authenticateHandler = {(ViewController, error) -> Void in
             if((ViewController) != nil) {
                 // Show login if player is not logged in
